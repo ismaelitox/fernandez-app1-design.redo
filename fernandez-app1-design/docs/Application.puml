@@ -1,0 +1,46 @@
+@startuml
+
+
+
+class ApplicationController{
+ -DatePicker :  addDate
+ -AddTask : button
+ -DeleteTask :  button
+ -EditDate :    button
+ -EditTask :    button
+ -ItemName :    TextField
+ -ItemDescription   : TextField
+ -loadAllTasks : button
+ -NewTask : button
+ -OpenFileSaver: MenuButton
+ -saveTask : button
+ -showAllTask : button
+ -ShowComplete : ListView<Strings>
+ -ShowCompleteTasks : Button
+ -ShowInCompleteTasks : Button
+ -showProgressMarker : ProgressIndicator
+ -showIncomplete : ListView<Strings>
+
+ editDateClicked()
+ editTasksClicked()
+ inputItemDescription()
+ inputItemString()
+ loadTaskClicked()
+ newTasksClicked()
+ removeTaskClicked()
+ saveCurrentTask()
+ showAllTasksClicked()
+ showCompleteTasksClicked()
+ showDateClicked()
+ showIncompleteTasks()
+
+ +getAddDate()
+ +setAddDate()
+
+ +getAddTask()
+ +setAddTask()
+
+
+}
+
+@enduml
